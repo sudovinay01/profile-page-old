@@ -1,0 +1,439 @@
+*{
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+ 
+    font-family: Arial;
+    margin: 0 !important;
+    padding:  0 !important;
+}
+a{
+  text-decoration: none;
+
+
+}
+/* Style the tab */
+.tab {
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  font-weight: lighter;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+/* Style the spans inside the tab */
+.tab .ta {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  text-align: center;
+  background-color: white;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: 30%;
+  font-weight: lighter;
+  border-bottom: 1px solid white;
+}
+@keyframes bgcolor {
+    0% {
+        background-color: white;
+         border-bottom: 1px solid white;
+         color: black;
+    }
+
+    25% {
+        background-color: red;
+         border-bottom: 1px solid red;
+         color: black;
+    }
+
+    50% {
+        background-color: green;
+         border-bottom: 1px solid green;
+         color: lightgrey;
+    }
+
+    75% {
+        background-color: blue;
+         border-bottom: 1px solid blue;
+         color: white;
+    }
+
+    100% {
+        background-color: #292929;
+         border-bottom: 1px solid #292929;
+         color: white;
+    }
+}
+.tab .badge {
+  color: black;
+  width: 10%;
+  text-align: center;
+   -webkit-animation: bgcolor 10s infinite;
+    animation: bgcolor 5s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  float: left;
+  outline: none;
+  transition: 0.3s;
+  padding: 15px 10px;
+  font-weight: lighter;
+  border-bottom: 1px solid white;
+}
+
+
+/* Change background color of spans on hover */
+.tab .ta:hover {
+  background-color: grey;
+  font-weight: lighter;
+  border-bottom: 1px solid grey;
+}
+
+/* Create an active/current tablink class */
+.tab .ta.active {
+  /*background-color: #ccc;*/
+  background-color: black;
+  font-weight: lighter;
+  color: white;
+  border-bottom: 1px solid black;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+  font-family: 'Raleway', sans-serif;
+ /* display: none;*/
+  
+  border-top: none;
+  animation: fadeEffect 1s;
+}
+@keyframes fadeEffect{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.para{
+  border-radius: 20px;
+  padding: 40px;
+  background-color: rgba(255,255,255,0.75);
+  max-width: 800px;
+  margin: 0 auto;
+}
+h2{
+	text-align: center;
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+}
+h3{
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+#about1{
+
+  text-align: center;
+  background: url(images/back1.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+}
+#profile{
+  max-width:200px;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+p{
+  font-size: 20px;
+   font-family: 'Raleway', sans-serif; 
+}
+.about2{
+  font-family: 'Pacifico', cursive;
+  background-color: white;
+  color: black;
+  padding: 40px;
+}
+.a3{
+  background-color: #e2e2e2;
+}
+#name{
+  font-size: 40px;
+}
+#aboutpara{
+  font-weight: lighter;
+}
+#inter{
+  text-align: center;
+  font-weight: lighter;
+}
+
+.col4{
+   
+  float: left;
+  width: 24%;
+
+}
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+.card{
+  background-color: black;
+  color: white;
+  margin: 0 5px ;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img{
+ 
+  width: 100%;
+  height: auto;
+}
+.col4 h3{
+  margin-left: 10px;
+
+}
+
+#ach{
+ background-color: black;
+ padding: 20px;
+
+}
+#ach h2{
+  text-align: center;
+color: white;
+
+}
+.col2a{
+   
+  float: left;
+  width: 70%;
+  font-size: 60px;
+  height: auto;
+
+}
+.col2b{
+   
+  float: left;
+  width: 30%;
+  height: auto;
+  padding-right: 70px;
+  padding-top: 50px;
+}
+
+.ache{
+  padding: 20px;
+
+  background-color: white;
+  margin: 20px;
+}
+
+#bg-i{
+background: url(images/pro.png);
+
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 70px;
+margin: 10px 20px;
+}
+.bg-t{
+  color: white;
+text-align: center;
+font-weight: bolder;
+font-size: 60px;
+}
+
+#skills{
+	padding: 30px;
+	background-color: white;
+	margin-bottom: 20px;
+}
+#skills h2{
+	padding: 10px;
+}
+.scontainer {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.wt {width: 75%; background-color: #4CAF50;}
+.p {width: 60%; background-color: #2196F3;}
+
+
+#rc{
+	background-color: white;
+	padding: 20px;
+	margin: 20px;
+}
+
+#ga{
+
+  background: url(images/g.jpg) no-repeat;
+  background-size: cover;
+
+
+}
+#ga p{
+padding: 30px;
+font-size: 50px;
+}
+#gr{
+	text-align: left;
+color: white;
+  background: url(images/rc.jpg) no-repeat;
+  background-size: cover;
+
+padding-bottom: 30px;
+}
+#gr p{
+padding: 20px;
+font-size: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+  #profile{
+    width: 100px;
+  }
+  .para{
+    padding: 10px;
+    margin: 10px;
+  }
+ .about2{
+  padding: 10px;
+ }
+ .bg-t{
+  
+font-size: 30px;
+}
+#ach{
+
+ padding: 0px;
+
+}
+
+}
+@media (max-width: 768px){
+	#gr{
+		  background: url(images/rc1.jpg) no-repeat;
+  background-size: cover;
+	}
+.col4 {
+   width: 100%;
+   margin: 10px 0px;
+ }
+ .col2a,.col2b {
+   width: 100%;
+   font-size: 30px;
+   margin: 10px 0px;
+ }
+
+ .img{
+  width: 100%;
+  height: auto;
+ }
+ h2{
+	font-size: 50px;
+}
+}
+@media (min-width: 768px){
+  .col4{
+   
+  margin: .5%;
+  width: 48%;
+
+}
+
+
+}
+
+@media (min-width: 1096px)
+{
+  .col4{width: 24%;}
+}
+
+
+
+footer{
+
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  bottom: 0px;
+  font-family: 'Raleway', sans-serif;
+
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+   border-radius: 50%;
+   border:1px solid black;
+   margin: 5px;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: white;
+  color: black;
+}
+
+/* Twitter */
+.fa-twitter {
+   background: white;
+  color: black;
+}
+.fa-google {
+  background: white;
+  color: black;
+}
+.fa-linkedin {
+ background: white;
+  color: black;
+}
+
+.fa-youtube {
+  background: white;
+  color: black;
+}
+
+.fa-instagram {
+ background: white;
+  color: black;
+}
